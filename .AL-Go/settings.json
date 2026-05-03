@@ -1,3 +1,4 @@
 {
-  "country": "w1"
+  "country": "w1",
+  "appFolders": ["app"]
 }
