@@ -1,14 +1,10 @@
 {
-  "templateUrl": "https://github.com/microsoft/AL-Go-PTE@latest",
   "type": "PTE",
-  "runs-on": "windows-latest",
-  "environments": [
-    {
-      "name": "Sandbox",
-      "type": "Sandbox",
-      "environmentName": "AdarshWorkspace",
-      "tenant": "cdd67a90-79fb-4d46-b0e8-dae220fb8eed",
-      "authContext": "BC_AUTHENTICATION"
-    }
-  ]
+  "environments": ["Sandbox"],
+  "DeployToSandbox": {
+    "EnvironmentType": "SaaS",
+    "EnvironmentName": "AdarshWorkspace",
+    "Branches": ["main"],
+    "ContinuousDeployment": true
+  }
 }
